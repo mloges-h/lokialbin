@@ -1,0 +1,47 @@
+1. Linux
+
+alias - renaming command 
+first -- unalias l
+then --- alias l=ls
+
+2. snap package manager of ubuntu
+
+3. useradd / adduser
+
+4. lvm
+5. nfs
+6.  stat locked_accounts.txt 
+OUTPUT:
+zimbra@star:/mnt$ stat locked_accounts.txt
+  File: locked_accounts.txt
+  Size: 0               Blocks: 0          IO Block: 4096   regular empty file
+Device: 902h/2306d      Inode: 151257315   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (  998/  zimbra)   Gid: (  998/  zimbra)
+Access: 2025-05-06 12:22:17.612964415 +0530
+Modify: 2025-05-06 12:19:25.894515194 +0530
+Change: 2025-05-06 12:19:25.894515194 +0530
+ Birth: -
+zimbra@star:/mnt$
+ 151257315
+
+less Zimbra.log - why not use cat means the file load in full memory/cat scroll faster but less we scroll manually so we use it 
+
+anchors ^, $ characters
+
+printenv
+export logesh=hari
+unset logesh
+
+
+Tune perfomance 
+
+1. cat /etc/fstab
+2. cat /proc/mount
+3. check all the mounts and its uses
+4. then nano /etc/fstab
+5. UUID=ca14e14b-147d-44d7-9529-27ff5d8ab5fd /               ext4  rw,noatime,nodiratime,errors=remount-ro 0 0 
+6. sudo mount -o remount /
+7. mount -a
+8. sudo hdparm -Tt /dev/sdc3
+
+ 
